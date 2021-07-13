@@ -55,6 +55,7 @@ header{
     transition: 0.3s;
 }
 .dark .flicker{
+    color:grey;
     transform: translateX(40px);
 }
 .dark > p{
