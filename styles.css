@@ -1,0 +1,110 @@
+body{
+    transition: 0.4s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(215, 216, 215);
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.switch{
+    margin: 30px 40px 0px 0px;
+    background-color: grey;
+    width: 80px;
+    height: 38px;
+    border-radius: 20px;
+    position: relative;
+}
+.flicker{
+    z-index: 5;
+    position:absolute;
+    top: 4px;
+    left:5px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 
+    inset 4px 4px 4px rgb(255 255 255), 
+    inset -8px -8px 5px rgb(195 193 198 / 90%);
+    transition: 0.4s;
+    
+}
+.moon{
+    position:absolute;
+    box-shadow: 5px 4px 0 0 rgb(255 255 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top:5px;
+    right:15px;
+}
+.sun{
+    position:absolute;
+    top:10px;
+    left:10px;
+   
+}
+#sunlogo{
+    color: yellow;
+}
+.dark{
+    background-color: rgb(28 ,28, 28);
+    transition: 0.3s;
+}
+.dark .flicker{
+    transform: translateX(40px);
+}
+.dark > p{
+    color: white;
+}
+.dark .switch{
+    background-color: rgb(168, 168, 68);
+}
+
+.heading{
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+    margin-top: 0;
+}
+.main-box{
+    position: absolute;
+    width: 300px;
+    height: 340px;
+    border: 2px solid #C2B8A3;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #C2B8A3;
+}
+
+.count{
+    margin: 100px auto 0px;
+    font-size: 50px;
+    width: max-content;
+}
+.button-box{
+    display: flex;
+    position: relative;
+    top:30%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+button{
+    color: black;
+    background-color: #BB8760;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: none;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid #BB8760;
+    position: relative;
+}
